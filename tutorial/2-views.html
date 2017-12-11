@@ -37,6 +37,7 @@ var Comment = Backbone.Model.extend({
   },
   upvote: function(){
     // Set the `votes` attribute to the current vote count plus one.
+    
     this.set('votes', this.votes() + 1);
   },
   downvote: function(){
